@@ -110,7 +110,7 @@ code vectordb.py
 2. For purposes of not having to load a lot of data and documents, we've *seeded* some random data strings in the file that we're loosely referring to as *documents*. These can be seen in the *datadocs* section of the file.
 ![data docs](./images/gaidd47.png?raw=true "Data docs")
 
-3. Likewise, we've added some metadata in the way of categories for the data items. These can be seen in the categories section.
+3. Likewise, we've added some metadata in the way of categories for the data items. These can be seen in the *categories* section.
 ![data categories](./images/gaidd48.png?raw=true "Data categories")
 
 4. Go ahead and run this program using the command shown below. This will take the document strings, create embeddings and vectors for them in the Chroma database section and then wait for us to enter a query.
@@ -218,19 +218,19 @@ cd /workspaces/rag/neo4j
 
 ./neo4j-setup.sh 1 &
 
-cd ../genai
 ```
 
-2. When done, you should see an "*=> => naming to docker.i/library/neo4j:custom*" message. The container should then be running. You can just hit *Enter* and do a *docker ps* command to verify.
+2. When done, you should see an "INFO Started" message. The container should then be running. You can just hit *Enter* and do a *docker ps* command to verify.
 
 ```
 docker ps
 ```
-![container check](./images/rag34.png?raw=true "container check")
+![container check](./images/rag35.png?raw=true "container check")
 
 3. For the next steps, make sure you're back in the *genai* directory. In here, we have a simple Python program to interact with the graph database and query it. The file name is lab4.py. Open the file either by clicking on [**genai/lab4.py**](./genai/lab4.py) or by entering the *code* command below in the codespace's terminal.
 
 ```
+cd ../genai
 code lab4.py
 ```
 
