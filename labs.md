@@ -1,7 +1,7 @@
 # Gen AI: Understanding and Using RAG
 ## Making LLMs smarter by pairing your data with Gen AI
 ## Session labs 
-## Revision 2.2 - 09/30/24
+## Revision 2.3 - 12/29/24
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
@@ -26,7 +26,7 @@ ollama pull llama3
 ```
 ![serve and pull](./images/rag06a.png?raw=true "serve and pull")
 
-3. While this is running, go ahead and open a second terminal session. In the codespace, right-click and select the *Split Terminal* option. This will add a second terminal side-by-side with your other one.
+3. While this is running, go ahead and open a second terminal session. In the codespace, right-click and select the *Split Terminal* option. This will add a second terminal side-by-side with your other one. (This may take a few minutes to completely initialize.)
 
 ![splitting terminal](./images/rag08.png?raw=true "splitting terminal")
    
@@ -50,7 +50,7 @@ python lab1.py
 ```
 ![running lab1 file](./images/rag09.png?raw=true "running lab1 file")
 
-8. This will take several minutes to run. When it's done, you'll be able to see a rather large amount of output about the benefits of python. (While this is running, you can go ahead and proceed with steps 9-11. You can click on the "+" sign (circled in the figure) to open another terminal.)
+8. This will take several minutes to run. When it's done, you'll be able to see a rather large amount of output about the benefits of python. (While this is running, you can go ahead and proceed with steps 9-11. You can click on the "+" sign (circled in the figure) to open another terminal. (You can navigate between terminals using the *tree* list of *bash* instances on the far right. Just click on the one you want.)
 
 ![lab output 1](./images/rag10a.png?raw=true "lab output 1")
   
@@ -107,7 +107,7 @@ python lab1.py
 code vectordb.py
 ```
 
-2. For purposes of not having to load a lot of data and documents, we've *seeded* some random data strings in the file that we're loosely referring to as *documents*. These can be seen in the *docdata* section of the file.
+2. For purposes of not having to load a lot of data and documents, we've *seeded* some random data strings in the file that we're loosely referring to as *documents*. These can be seen in the *datadocs* section of the file.
 ![data docs](./images/gaidd47.png?raw=true "Data docs")
 
 3. Likewise, we've added some metadata in the way of categories for the data items. These can be seen in the categories section.
