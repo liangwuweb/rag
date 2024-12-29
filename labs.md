@@ -345,6 +345,7 @@ python lab5.py
 Who starred in Star Trek : Generations?
 Which movies are comedies?
 ```
+(Ignore the initial error about "NoneType".)
 
 <p align="center">
 **[END OF LAB]**
