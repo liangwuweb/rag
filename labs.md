@@ -1,7 +1,7 @@
 # Gen AI: Understanding and Using RAG
 ## Making LLMs smarter by pairing your data with Gen AI
 ## Session labs 
-## Revision 2.3 - 12/29/24
+## Revision 2.4 - 01/04/25
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
@@ -19,14 +19,14 @@ ollama
 ![downloading ollama](./images/rag05.png?raw=true "downloading ollama")
 ![ollama usage](./images/rag05a.png?raw=true "ollama usage")
 
-2. Next, start the ollama server running in the background with the first command below. After that is done, pull down the *llama3* model with the second command.
+2. Next, start the ollama server running in the background with the first command below. After that is done, you can just hit Enter and run the second command to pull down the *llama3* model with the second command.
 ```
 ollama serve &
 ollama pull llama3
 ```
 ![serve and pull](./images/rag06a.png?raw=true "serve and pull")
 
-3. While this is running, go ahead and open a second terminal session. In the codespace, right-click and select the *Split Terminal* option. This will add a second terminal side-by-side with your other one. (This may take a few minutes to completely initialize.)
+3. While this is running, go ahead and open a second terminal session. In the codespace, right-click and select the *Split Terminal* option. This will add a second terminal side-by-side with your other one. 
 
 ![splitting terminal](./images/rag08.png?raw=true "splitting terminal")
    
@@ -50,7 +50,7 @@ python lab1.py
 ```
 ![running lab1 file](./images/rag09.png?raw=true "running lab1 file")
 
-8. This will take several minutes to run. When it's done, you'll be able to see a rather large amount of output about the benefits of python. (While this is running, you can go ahead and proceed with steps 9-11. You can click on the "+" sign (circled in the figure) to open another terminal. (You can navigate between terminals using the *tree* list of *bash* instances on the far right. Just click on the one you want.)
+8. When this is done running, you'll be able to see a rather large amount of output about the benefits of python. (While this is running, you can go ahead and proceed with steps 9-11. You can click on the "+" sign (circled in the figure) to open another terminal. (You can navigate between terminals using the *tree* list of *bash* instances on the far right. Just click on the one you want.)
 
 ![lab output 1](./images/rag10a.png?raw=true "lab output 1")
   
@@ -61,7 +61,7 @@ cd genai (if not there)
 code ../data/kb.txt
 ```
 
-10. Now update the python file to pass the context from the file. Switch back to the *lab1.py* file. First, after the imports, add the code below to read in the data file.
+10. Now update the python program to pass the context from the data file. Switch back to the *lab1.py* file. First, after the imports, add the code below to read in the data file.
 
 ```
 # Read the text from the file
