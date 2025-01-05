@@ -162,7 +162,7 @@ python rag.py ../samples/data.pdf
 ```
 ![reading in the pdf](./images/gaidd54.png?raw=true "Reading in the PDF")
 
-4. The program will be waiting for a query. Let's ask it for a query about something only in the document. As a suggestion, you can try the one below.
+4. The program will be waiting for a query. Let's ask it for a query about something only in the document. As a suggestion, you can try the one below. The AI will take a while to return results.
 ```
 What does the document say about art and literature topics?
 ```
@@ -273,7 +273,7 @@ python lab4.py
 
 1. In our last lab, we hardcoded Cypher queries and worked more directly with the Graph database. Let's see how we can simplify this.
 
-2. First, we need a different graph database. Again, we'll use a docker image for this that is already populated with data for us. Change to the neo4j directory and run the script, but note the different parameter ("2" instead of "1"). This will take a few minutes to build and start. Afterwards you can change back to the *workspaces/rag* subdirectory. Be sure to add the "&" to run this in the background.
+2. First, we need a different graph database. Again, we'll use a docker image for this that is already populated with data for us. Change to the neo4j directory and run the script, but note the different parameter ("2" instead of "1"). This will take a few minutes to build and start. (When it is ready, you will see a "*INFO  [neo4j/########] successfully initialized:*" message.) Afterwards you can change back to the *workspaces/rag* subdirectory. Be sure to add the "&" to run this in the background.
 
 ```
 cd /workspaces/rag/neo4j
