@@ -19,7 +19,23 @@
         "vscode": {
             "settings": {
                 "python.terminal.activateEnvInCurrentTerminal": true,
-                "python.defaultInterpreterPath": ".venv/bin/python"
+                "python.defaultInterpreterPath": ".venv/bin/python",
+                "github.copilot.enable": {
+                  "*": false,
+                  "plaintext": false,  
+                  "markdown": false,
+                  "scminput": false
+                 },   
+                 "github.copilot.enableAutoComplete": false, 
+                 "editor.inlineSuggest.enabled": false,
+                 "github.copilot.inlineSuggest.enable": false,
+                 "github.copilot.chat.enable": false,
+                 "github.copilotChat.showInExplorer": false,
+                 "workbench.startupEditor": "readme", 
+                 // Open Markdown files in preview mode by default
+                 "workbench.editorAssociations": {
+                     "*.md": "vscode.markdown.preview.editor"
+                 }
             }
         }
     },
