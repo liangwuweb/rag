@@ -67,7 +67,7 @@ while True:
         continue
     query_results = vdb_collection.query(
         query_texts=[query],
-        n_results=1,
+        n_results=3,
     )
     
     print(query_results["documents"])

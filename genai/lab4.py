@@ -12,8 +12,39 @@ def query_graph():
     return result
  
 result = query_graph()
-print(result)
 
+import requests
+
+# Use Ollama to generate a detailed response based on the retrieved answer
+ollama_url = "http://localhost:11434/api/generate"
+
+# Prepare a prompt from the graph result
+prompt = "Generate a biography based on the following information:\n\n"
 for record in result:
-    print(f"{record['person']} is a {record['profession']} who worked with {record['collaborator']}.\n")
+    prompt += f"{record['person']} is a {record['profession']} who worked with {record['collaborator']}.\n"
  
+# Use Ollama for generation
+query = {
+    "model": "llama3",
+    "prompt": prompt,
+    "stream": False
+}
+ 
+response = requests.post(ollama_url, json=query)
+ 
+# Check if the request was successful
+if response.status_code == 200:
+    # Process the response
+    if query["stream"]:
+        # Handle streaming response
+        for line in response.iter_lines():
+            if line:
+                body = json.loads(line)
+                print(body.get("response", ""))
+    else:
+        # Handle non-streaming response
+        response_data = response.json()
+        print(response_data["response"])
+else:
+    # Print error message
+    print("Error:", response.status_code, response.text)

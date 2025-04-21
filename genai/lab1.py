@@ -1,6 +1,9 @@
 import requests
 import json
 
+# Read the text from the file
+with open("../data/kb.txt", "r") as file:
+    knowledge_data = file.read()
 
 # Define the local LLM endpoint (Ollama)
 ollama_url = "http://localhost:11434/api/generate"
@@ -14,7 +17,7 @@ headers = {
 # Define the input for the LLM
 data = {
     "model": "llama3",  # The local model you pulled
-    "prompt": f"Explain the benefits of Python:\n\n",
+    "prompt": f"Based on the following information, explain the benefits of Python:\n\n{knowledge_data}",
     "stream": False
 }
  
