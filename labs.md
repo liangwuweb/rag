@@ -1,7 +1,7 @@
 # Gen AI: Understanding and Using RAG
 ## Making LLMs smarter by pairing your data with Gen AI
 ## Session labs 
-## Revision 2.4 - 01/04/25
+## Revision 2.5 - 04/21/25
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
@@ -220,7 +220,7 @@ cd /workspaces/rag/neo4j
 
 ```
 
-2. When done, you should see an "INFO Started" message. The container should then be running. You can just hit *Enter* and do a *docker ps* command to verify.
+2. When done, you may see an "INFO Started" or just a "naming to docker.io/library/neo4j:custom" message. The container should then be running. You can just hit *Enter* and do a *docker ps* command to verify you see a "neo4j:custom" container with "Up # seconds" in the STATUS column.
 
 ```
 docker ps
