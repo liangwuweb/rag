@@ -482,7 +482,7 @@ while True:
 ```
 python lab6.py
 ```
-11. You can prompt it with queries related to the info in the dataset, like:
+11. You can prompt it with queries related to the info in the dataset, like the one below. (You can ignore errors about Attributes or invalid options.)
 ```
 I have a patient that may have Botulism. How can I confirm the diagnosis?
 ```
